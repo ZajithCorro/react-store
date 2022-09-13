@@ -11,6 +11,9 @@ module.exports = {
 	},
 	resolve: {
 		extensions: ['.js', '.jsx'],
+		alias: {
+			Images: path.resolve(__dirname, './src/images'),
+		},
 	},
 	module: {
 		rules: [
@@ -28,6 +31,10 @@ module.exports = {
 						loader: 'html-loader',
 					},
 				],
+			},
+			{
+				test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
+				type: 'asset',
 			},
 			{
 				test: /\.css$/,

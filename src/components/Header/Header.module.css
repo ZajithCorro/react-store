@@ -1,6 +1,28 @@
 .header {
 	display: flex;
+	justify-content: center;
+	padding: 1rem;
+	background-color: #0b2239;
+}
+
+.headerNav {
+	max-width: 1200px;
+	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.headerTitle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.headerTitle img {
+	height: 50px;
+	max-width: 100%;
 }
 
 .headerCheckout {
@@ -12,6 +34,10 @@
 	margin: 0 0 0 0.5em;
 }
 
+.headerCheckout i {
+	font-size: 1.2rem;
+}
+
 .headerAlert {
 	color: #33b13a;
 	font-size: 14px;
@@ -20,5 +46,5 @@
 
 .header a {
 	text-decoration: none;
-	color: #33b1ff;
+	color: #cfd9e0;
 }
